@@ -1,0 +1,15 @@
+notes:
+defaults for i2c not correct, use wire.begin(4,15)
+write pin 16 high for oled power (oled reset)
+adafruit ssd1306 driver initializes wire.begin() with defaults (must modifiy library, just comment out)
+
+dependancies:
+
+#include <EnvironmentCalculations.h> //"BME280" library by "Tyler Glen" v2.3.0
+#include <BME280I2C.h>	//"BME280" library by "Tyler Glen" v2.3.0
+#include <SPI.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>		//"ADAFRUIT GFX Library" by "Adafruit" v1.2.3
+#include <Adafruit_SSD1306.h>	//"ADAFRUIT SSD1306" library by "Adafruit" v1.1.2
+#include <Fonts/FreeSans12pt7b.h>//"ADAFRUIT GFX Library" by "Adafruit" v1.2.3
+#include <Fonts/FreeSansBold9pt7b.h>//"ADAFRUIT GFX Library" by "Adafruit" v1.2.3
